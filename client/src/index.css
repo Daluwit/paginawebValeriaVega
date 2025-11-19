@@ -9,12 +9,12 @@
   --opaque-button-border-intensity: -8;
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
-  --background: 36 38% 97%;
+  --background: 36 14% 96%;
   --foreground: 216 85% 13%;
-  --border: 36 20% 88%;
-  --card: 36 38% 96%;
+  --border: 36 20% 87%;
+  --card: 0 0% 100%;
   --card-foreground: 216 85% 13%;
-  --card-border: 36 25% 90%;
+  --card-border: 36 25% 87%;
   --sidebar: 36 38% 94%;
   --sidebar-foreground: 216 85% 13%;
   --sidebar-border: 36 28% 86%;
@@ -46,7 +46,7 @@
   --font-sans: Parkinsans, sans-serif;
   --font-serif: Parkinsans, serif;
   --font-mono: Menlo, monospace;
-  --radius: .5rem;
+  --radius: .75rem;
   --shadow-2xs: 0px 2px 0px 0px hsl(216 85% 13% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(216 85% 13% / 0.00);
   --shadow-sm: 0px 2px 0px 0px hsl(216 85% 13% / 0.00), 0px 1px 2px -1px hsl(216 85% 13% / 0.00);
