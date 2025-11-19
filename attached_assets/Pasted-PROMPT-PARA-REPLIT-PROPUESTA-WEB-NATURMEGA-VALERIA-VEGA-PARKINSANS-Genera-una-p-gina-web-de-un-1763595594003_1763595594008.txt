@@ -1,0 +1,276 @@
+PROMPT PARA REPLIT – PROPUESTA WEB NATURMEGA (VALERIA VEGA, PARKINSANS)
+
+Genera una página web de una sola vista (one page) para presentar una Propuesta de Consultoría en Talento Humano para NATURMEGA, con el estilo de marca personal de Valeria Vega – Psicóloga & Coach organizacional y de vida.
+
+La web debe ser elegante, profesional, minimalista y corporativa, con scroll suave entre secciones.
+
+🎨 ESTILO VISUAL
+
+Paleta de colores (usar estos tonos como base obligatoria):
+
+Azul profundo: #082053
+
+Azul medio: #306ab0
+
+Beige suave / crema: #faf6f1
+
+Azul pastel: #dee9f6
+
+Azul muy claro: #f3f9ff
+
+Crema claro: #fffcf7
+
+Blanco: #ffffff
+
+Beige oscuro elegante: #ded6cb
+
+Tipografía (obligatoria):
+
+Usar Parkinsans (Google Fonts) para todos los textos.
+
+Títulos: Parkinsans 700–800
+
+Subtítulos: Parkinsans 600
+
+Párrafos: Parkinsans 400–500
+
+Estilo general:
+
+Mucho aire visual, diseño limpio y ordenado.
+
+Tarjetas con bordes suaves y líneas finas en #ded6cb.
+
+Botones redondeados con hover en azul medio.
+
+Estética similar a una presentación premium: profesional, cálida y cercana.
+
+100% responsive (móvil, tablet, escritorio).
+
+Scroll suave y pequeñas animaciones (fade-in / slide-up) al hacer scroll.
+
+🧱 ESTRUCTURA Y CONTENIDO DE LA PÁGINA
+1. Portada / Cover
+
+Sección inicial centrada en la propuesta:
+
+Título principal grande:
+“Propuesta – NATURMEGA”
+
+Subtítulo:
+“Consultoría en Talento Humano”
+
+Texto pequeño:
+“Barranquilla · Noviembre 2025”
+
+En la parte inferior de esta sección, una nota en tipografía pequeña:
+
+“Documento confidencial destinado únicamente para el equipo directivo de Naturmega.
+Está prohibida su reproducción y/o distribución total o parcial sin permiso escrito de la fuente.
+Este documento representa una propiedad intelectual y como tal se encuentra protegida por la normatividad legal aplicable a la materia.”
+
+Fondo en #faf6f1 con acentos en #082053 y #306ab0.
+
+2. Sección: Tabla de contenido
+
+Crear una sección tipo “índice” con enlaces que hagan scroll a cada parte de la página.
+
+Título: “Tabla de contenido”
+
+Ítems (cada uno debe llevar a su sección):
+
+ANÁLISIS DE LA SITUACIÓN ACTUAL
+
+PILARES A TRABAJAR
+
+HALLAZGOS IDENTIFICADOS BAJO VISIÓN SISTÉMICA
+
+PLANES DE ACCIÓN DE CADA PILAR
+
+FORMA DE PAGO
+
+3. Sección: ANÁLISIS DE LA SITUACIÓN ACTUAL
+
+Título: “Análisis de la situación actual”
+Subtítulo: “Definición de pilares y procesos de Talento Humano que debemos trabajar”
+
+Usar tarjetas o columnas para cada pilar con los siguientes textos:
+
+Cultura Organizacional:
+Sistema de valores, creencias, supuestos, normas y comportamientos compartidos que guía la forma en que las personas dentro de una organización perciben, piensan, lideran, sienten y actúan.
+
+Selección del Talento Humano adecuado:
+Proceso sistemático mediante el cual una organización identifica, evalúa y elige a los candidatos que cumplen con el perfil requerido para un cargo, considerando competencias técnicas, comportamentales y evaluando la alineación con la cultura de la empresa.
+
+Evaluación de desempeño:
+Proceso continuo, estructurado y objetivo mediante el cual se analiza el rendimiento, el comportamiento y los resultados de un colaborador en un período determinado, comparándolos con estándares previamente definidos.
+
+Plan de desarrollo:
+El plan de desarrollo es un conjunto estructurado de acciones formativas diseñadas para fortalecer las competencias técnicas y blandas de un colaborador, con el fin de mejorar su desempeño actual y preparar su crecimiento profesional dentro de la organización.
+
+Plan de beneficios:
+Conjunto de compensaciones económicas y no económicas que la empresa ofrece a sus colaboradores, además del salario básico, para contribuir a su bienestar, motivación, retención y calidad de vida.
+
+4. Sección: PILARES A TRABAJAR
+
+Aquí solo lista visualmente los cinco pilares (tipo chips / tarjetas pequeñas):
+
+Cultura organizacional
+
+Selección del talento humano adecuado
+
+Evaluación de desempeño
+
+Plan de desarrollo
+
+Plan de beneficios
+
+Fondo en #f3f9ff o #dee9f6.
+
+5. Sección: HALLAZGOS IDENTIFICADOS EN CADA PILAR BAJO VISIÓN SISTÉMICA
+
+Crear 5 bloques, cada uno con:
+
+Título del pilar
+
+Subtítulo “Crítico” con lista de puntos
+
+Subtítulo “Riesgos” con lista de puntos
+
+Usar un diseño de tarjetas con una línea lateral en azul profundo.
+
+3.1 Cultura Organizacional
+
+Crítico:
+
+No hay evaluación formal → no se sabe cómo se está viviendo la cultura.
+
+Proyecto de cultura anterior quedó inconcluso: perfiles a medias, manuales temporales, formatos cambiados mil veces.
+
+Colaboradores que solo ejecutan tareas, trabajan sin sentido desconectados del propósito.
+
+Riesgos:
+
+Desconexión entre la cultura deseada y la realidad cotidiana en los próximos años.
+
+Desgaste emocional.
+
+El exceso de presión y el micromanagement destruye la motivación.
+
+3.2 Selección del Talento Humano adecuado
+
+Crítico:
+
+Falta de procesos de selección robustos alineados a los nuevos valores y objetivos.
+
+Errores de contratación ante perfiles de cargo incompletos y cambiantes.
+
+Riesgos:
+
+Contratación de personas que resuelven en la operación pero no cazan culturalmente con la compañía.
+
+Rotación por inadecuación de colaborador - cargo.
+
+Aumento del micromanagement.
+
+3.3 Evaluación de desempeño
+
+Crítico:
+
+Ausencia de indicadores por roles.
+
+Control ejercido desde la exigencia y no desde tableros de control.
+
+Riesgos:
+
+Dificultad para tomar decisiones de aumentos, ascensos, planes de desarrollo y sucesión.
+
+3.4 Plan de desarrollo
+
+Crítico:
+
+Dificultad para tomar decisiones de aumentos, ascensos, planes de desarrollo y sucesión.
+
+Riesgos:
+
+Pérdida de Talento con potencial.
+
+Dificultad para soportar la innovación y la expansión de la empresa sin personas preparadas.
+
+3.5 Plan de beneficios
+
+Crítico:
+
+Inequidad salarial.
+
+Ausencia de estructura de compensación y beneficios.
+
+Riesgos:
+
+Resentimientos, comparaciones constantes, chisme y clima contaminado.
+
+Riesgo de perder talentos por sensación de injusticia.
+
+6. Sección: PLANES DE ACCIÓN EN CADA PILAR
+
+Crear una sección tipo timeline o cuadrícula de tarjetas que diga “Plan de acción por pilar” con espacio visual para describir acciones (pueden ser bullets o texto corto).
+Puedes dejar texto genérico o placeholder si es necesario.
+
+7. Sección: NUESTRA PROPUESTA INCLUYE
+
+Sección muy destacada (puede tener fondo en #082053 y texto en #fffcf7).
+
+Título: “Nuestra propuesta incluye”
+
+Contenido en formato lista con íconos:
+
+Fortalecimiento del rol de la líder Capital Humano
+No es sólo ordenar procesos, es subir a Capital Humano al nivel estratégico.
+
+Rediseñar el rol de María Camila
+Que deje parte de lo operativo (apoyada en IA y sistemas) y tome el rol de socia estratégica orientada a las personas.
+
+Uso de tecnología e IA en talento humano
+Diseñar procesos + herramientas (plantillas, flujos, automatizaciones) para disminuir tiempo de ejecución.
+
+Trabajo directo con la alta dirección
+Para generar un giro en la cultura organizacional, debemos trabajar de la mano con el equipo directivo.
+
+Alineación cultural
+
+Estilo de liderazgo
+
+Cómo pasar de micromanagement a gestión por indicadores
+
+Incluir un botón de llamada a la acción como: “Agendar reunión con Valeria Vega”.
+
+8. Sección: FORMA DE PAGO
+
+Crear una sección final sencilla, con un diseño limpio:
+
+Título: “Forma de pago”
+
+Dejar espacio con texto ejemplo o placeholder para que luego se editen condiciones, por ejemplo:
+
+Modalidad de pago
+
+Plazos
+
+Porcentaje de anticipo
+
+Métodos de pago
+
+9. Footer
+
+Footer minimalista con fondo #082053 y texto en blanco:
+
+“© 2025 – Propuesta de Consultoría en Talento Humano para Naturmega · Valeria Vega”
+
+🖥 REQUISITOS TÉCNICOS
+
+Entregar el proyecto con: index.html, styles.css y script.js.
+
+Importar la fuente Parkinsans desde Google Fonts.
+
+Usar HTML semántico, CSS limpio y algo de JavaScript solo para la navegación suave y pequeñas animaciones.
+
+Hacer que los ítems de la Tabla de contenido hagan scroll suave a cada sección.
