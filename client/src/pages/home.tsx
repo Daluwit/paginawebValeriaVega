@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Navbar from "@/components/Navbar";
+import ProfileImage from "@/components/ProfileImage";
 import { 
   Users, 
   Target, 
@@ -154,35 +156,81 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#faf6f1" }}>
+    <div className="min-h-screen" style={{ 
+      background: "linear-gradient(135deg, #faf6f1 0%, #f3f9ff 50%, #faf6f1 100%)"
+    }}>
+      <Navbar scrollToSection={scrollToSection} />
       {/* 1. PORTADA / COVER */}
       <section 
-        className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative"
-        style={{ backgroundColor: "#faf6f1" }}
+        className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative pt-24 md:pt-28 overflow-hidden"
+        style={{ 
+          background: "linear-gradient(135deg, #faf6f1 0%, #f3f9ff 50%, #dee9f6 100%)"
+        }}
         data-testid="section-portada"
       >
-        <div className="max-w-4xl mx-auto text-center space-y-8 fade-in-section">
-          <h1 
-            className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight"
-            style={{ color: "#082053", fontWeight: 800 }}
-            data-testid="title-propuesta"
-          >
-            Propuesta – NATURMEGA
-          </h1>
-          <h2 
-            className="text-3xl md:text-4xl font-semibold"
-            style={{ color: "#306ab0", fontWeight: 600 }}
-            data-testid="subtitle-consultoria"
-          >
-            Consultoría en Talento Humano
-          </h2>
-          <p 
-            className="text-lg md:text-xl"
-            style={{ color: "#082053", fontWeight: 500 }}
-            data-testid="text-location"
-          >
-            Barranquilla · Noviembre 2025
-          </p>
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-3 gap-8 items-center">
+            {/* Imagen de perfil - lado izquierdo */}
+            <div className="md:col-span-1 flex justify-center md:justify-end fade-in-section">
+              <div className="relative">
+                {/* Borde azul decorativo */}
+                <div 
+                  className="absolute -left-4 -bottom-4 w-full h-full rounded-lg z-0"
+                  style={{ backgroundColor: "#082053" }}
+                />
+                <div 
+                  className="absolute -left-2 -bottom-2 w-full h-full rounded-lg z-10"
+                  style={{ backgroundColor: "#306ab0" }}
+                />
+                <div className="relative z-20 w-64 md:w-80 h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
+                  <ProfileImage className="w-full h-full" />
+                </div>
+              </div>
+            </div>
+
+            {/* Contenido central */}
+            <div className="md:col-span-2 text-center md:text-left space-y-8 fade-in-section">
+              <div>
+                <div className="mb-6 md:mb-8">
+                  <img
+                    src="/naturmega-logo.svg"
+                    alt="Naturmega Logo"
+                    className="h-20 md:h-32 lg:h-40 xl:h-44 w-auto object-contain mx-auto md:mx-0 max-w-full"
+                    style={{ maxWidth: '500px' }}
+                    onError={(e) => {
+                      // Fallback si no existe el logo
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'block';
+                    }}
+                    data-testid="naturmega-logo"
+                  />
+                  <h1 
+                    className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight hidden"
+                    style={{ color: "#082053", fontWeight: 800 }}
+                    data-testid="title-propuesta-fallback"
+                  >
+                    NATURMEGA
+                  </h1>
+                </div>
+                <h2 
+                  className="text-2xl md:text-3xl font-semibold mb-4"
+                  style={{ color: "#306ab0", fontWeight: 600 }}
+                  data-testid="subtitle-consultoria"
+                >
+                  Consultoría en gestion del Talento Humano
+                </h2>
+                <p 
+                  className="text-lg md:text-xl"
+                  style={{ color: "#082053", fontWeight: 500 }}
+                  data-testid="text-location"
+                >
+                  Barranquilla · Noviembre 2025
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div 
@@ -204,7 +252,9 @@ export default function Home() {
       <section 
         id="tabla-contenido"
         className="py-20 px-6"
-        style={{ backgroundColor: "#f3f9ff" }}
+        style={{ 
+          background: "linear-gradient(180deg, #f3f9ff 0%, #ffffff 100%)"
+        }}
         data-testid="section-tabla-contenido"
       >
         <div className="max-w-4xl mx-auto fade-in-section">
@@ -247,7 +297,9 @@ export default function Home() {
       <section 
         id="analisis"
         className="py-20 px-6"
-        style={{ backgroundColor: "#faf6f1" }}
+        style={{ 
+          background: "linear-gradient(180deg, #ffffff 0%, #faf6f1 50%, #f3f9ff 100%)"
+        }}
         data-testid="section-analisis"
       >
         <div className="max-w-7xl mx-auto fade-in-section">
@@ -313,7 +365,9 @@ export default function Home() {
       <section 
         id="pilares"
         className="py-20 px-6"
-        style={{ backgroundColor: "#dee9f6" }}
+        style={{ 
+          background: "linear-gradient(135deg, #dee9f6 0%, #f3f9ff 50%, #dee9f6 100%)"
+        }}
         data-testid="section-pilares"
       >
         <div className="max-w-5xl mx-auto fade-in-section">
@@ -354,7 +408,9 @@ export default function Home() {
       <section 
         id="hallazgos"
         className="py-20 px-6"
-        style={{ backgroundColor: "#faf6f1" }}
+        style={{ 
+          background: "linear-gradient(180deg, #f3f9ff 0%, #faf6f1 50%, #ffffff 100%)"
+        }}
         data-testid="section-hallazgos"
       >
         <div className="max-w-6xl mx-auto">
@@ -464,7 +520,9 @@ export default function Home() {
       <section 
         id="planes"
         className="py-20 px-6"
-        style={{ backgroundColor: "#f3f9ff" }}
+        style={{ 
+          background: "linear-gradient(135deg, #f3f9ff 0%, #ffffff 50%, #faf6f1 100%)"
+        }}
         data-testid="section-planes"
       >
         <div className="max-w-6xl mx-auto fade-in-section">
@@ -714,7 +772,9 @@ export default function Home() {
       <section 
         id="forma-pago"
         className="py-20 px-6"
-        style={{ backgroundColor: "#faf6f1" }}
+        style={{ 
+          background: "linear-gradient(180deg, #ffffff 0%, #faf6f1 100%)"
+        }}
         data-testid="section-forma-pago"
       >
         <div className="max-w-4xl mx-auto fade-in-section">
@@ -735,54 +795,84 @@ export default function Home() {
           >
             <CardContent className="p-10 md:p-12">
               <div className="space-y-8">
-                <div data-testid="block-modalidad-pago">
-                  <h3 
-                    className="text-xl font-semibold mb-3"
-                    style={{ color: "#082053", fontWeight: 600 }}
-                    data-testid="heading-modalidad-pago"
+                {/* Valor del servicio */}
+                <div className="text-center mb-8">
+                  <div 
+                    className="text-5xl md:text-6xl font-bold mb-2"
+                    style={{ color: "#082053", fontWeight: 800 }}
+                    data-testid="valor-servicio"
                   >
-                    Modalidad de pago
-                  </h3>
+                    $6.800.000
+                  </div>
                   <p 
-                    className="leading-relaxed"
-                    style={{ color: "#082053", fontWeight: 400, opacity: 0.85 }}
-                    data-testid="text-modalidad-pago"
+                    className="text-sm md:text-base"
+                    style={{ color: "#306ab0", fontWeight: 500 }}
                   >
-                    Las condiciones de pago serán acordadas en reunión conjunta según las necesidades y capacidad de la organización.
+                    Servicio presencial
                   </p>
                 </div>
 
-                <div data-testid="block-plazos">
+                {/* Detalles del servicio */}
+                <div data-testid="block-detalles-servicio">
                   <h3 
-                    className="text-xl font-semibold mb-3"
+                    className="text-xl font-semibold mb-4"
                     style={{ color: "#082053", fontWeight: 600 }}
-                    data-testid="heading-plazos"
+                    data-testid="heading-detalles-servicio"
                   >
-                    Plazos
+                    Horarios de servicio
                   </h3>
-                  <p 
-                    className="leading-relaxed"
-                    style={{ color: "#082053", fontWeight: 400, opacity: 0.85 }}
-                    data-testid="text-plazos"
-                  >
-                    Los plazos de ejecución del proyecto se definirán en función del alcance acordado y los recursos disponibles.
-                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <span 
+                        className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
+                        style={{ backgroundColor: "#306ab0" }}
+                      />
+                      <p 
+                        className="leading-relaxed flex-1"
+                        style={{ color: "#082053", fontWeight: 500 }}
+                      >
+                        <strong>Lunes:</strong> Jornada completa
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span 
+                        className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
+                        style={{ backgroundColor: "#306ab0" }}
+                      />
+                      <p 
+                        className="leading-relaxed flex-1"
+                        style={{ color: "#082053", fontWeight: 500 }}
+                      >
+                        <strong>Martes, miércoles y jueves:</strong> Jornada de la mañana
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span 
+                        className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
+                        style={{ backgroundColor: "#306ab0" }}
+                      />
+                      <p 
+                        className="leading-relaxed flex-1"
+                        style={{ color: "#082053", fontWeight: 400, opacity: 0.85 }}
+                      >
+                        Disponibilidad de acompañamiento por fuera del horario descrito
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div data-testid="block-metodos-pago">
-                  <h3 
-                    className="text-xl font-semibold mb-3"
-                    style={{ color: "#082053", fontWeight: 600 }}
-                    data-testid="heading-metodos-pago"
-                  >
-                    Métodos de pago
-                  </h3>
+                {/* Tipo de contrato */}
+                <div 
+                  className="pt-6 border-t"
+                  style={{ borderColor: "#ded6cb" }}
+                  data-testid="block-tipo-contrato"
+                >
                   <p 
-                    className="leading-relaxed"
-                    style={{ color: "#082053", fontWeight: 400, opacity: 0.85 }}
-                    data-testid="text-metodos-pago"
+                    className="text-center leading-relaxed"
+                    style={{ color: "#082053", fontWeight: 500 }}
+                    data-testid="text-tipo-contrato"
                   >
-                    Transferencia bancaria, consignación o pago digital según preferencia de la organización.
+                    Contrato por prestación de servicios
                   </p>
                 </div>
               </div>
