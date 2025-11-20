@@ -21,6 +21,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
     { id: "analisis", label: "Análisis" },
     { id: "pilares", label: "Pilares" },
     { id: "hallazgos", label: "Hallazgos" },
+    { id: "estrategias", label: "Estrategias" },
     { id: "planes", label: "Planes" },
     { id: "propuesta", label: "Propuesta" },
     { id: "forma-pago", label: "Pago" },
@@ -103,7 +104,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-all duration-200 ${
                   activeSection === item.id
                     ? "text-white"
                     : "text-[#082053] hover:text-[#306ab0]"
